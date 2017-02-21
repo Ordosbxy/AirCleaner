@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">亿达森AirCleaner</string>
+    <!--启动页面所有-->
+    <string name="company_name">\@青州亿达森工艺品有限公司</string>
+    <string name="launcher_title">亿达森工艺品</string>
+    <!--登录界面所有-->
+    <string name="login_title">登录</string>
+    <string name="login_account">帐号</string>
+    <string name="login_password">密码</string>
+    <string name="login_account_hint">用户名/手机号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_start_use">开始使用</string>
+    <string name="login_fail_hint">登录失败</string>
+    <!--注册界面所有-->
+    <string name="register_title">注册</string>
+    <string name="register_next">下一步</string>
+    <string name="register_phone">手机号</string>
+    <string name="register_phone_hint">输入11位手机号</string>
+    <string name="register_get_verify_code">获取验证码</string>
+    <string name="register_verify">验证码</string>
+    <string name="register_verify_hint">6位验证码</string>
+    <string name="register_show_verify">显示验证码</string>
+    <string name="register_hide_verify">隐藏验证码</string>
+    <string name="register_password_hint">6至12位字母加数字组合</string>
+    <string name="register_show_password">显示密码</string>
+    <string name="register_immediate_register">立即注册</string>
+    <string name="register_fail_title">注册失败</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_no_input_phone">你还没有输入任何手机号</string>
+    <string name="register_gain_verify_success">验证码已经发送到手机</string>
+    <!--找回密码界面所有-->
+    <string name="find_password_title">忘记密码</string>
+    <string name="find_password_phone_hint">11位数字</string>
+    <string name="find_password_verify_hint">短信验证码</string>
+    <string name="find_password_new_password">新密码</string>
+    <string name="find_password_hide_password">隐藏密码</string>
+    <string name="find_password_show_phone">短信验证码已发送至:\n</string>
+    <string name="find_password_finish">完成</string>
+    <string name="find_password_fail_title">重置密码失败</string>
+    <string name="find_password_success">重置密码成功</string>
+    <string name="find_password_error_phone">错误手机号</string>
+    <string name="find_password_gain_verify_fail">获取验证错误</string>
+    <string name="find_password_input_error">你或许还有什么没有输入</string>
+    <string name="find_password_pass_length_error">密码长度必须在6-12位之间</string>
+    <string name="find_password_network_error">网络错误，请重试</string>
+    <!--我的设备界面所用-->
+    <string name="device_title">我的设备</string>
+    <string name="device_hint_text">提示</string>
+    <string name="device_name">空气净化器</string>
+    <string name="device_info">MAC:00-12-34-55-66</string>
+    <string name="device_no_hint">点击右上角「+」添加设备</string>
+    <string name="device_change">更换</string>
+    <string name="device_delete">删除</string>
+    <string name="device_add_device">添加</string>
+    <string name="device_change_hint_content">确定要更换网络嘛？</string>
+    <string name="device_not_online_hint">设备不在线，请检查设备是否开启</string>
+    <string name="device_back_exit">再按一次退出应用</string>
+    <string name="device_no_function">该功能还在建设中，请等待</string>
+    <string name="device_add_device_fail">扫描二维码添加设备失败</string>
+    <!--二维码扫描界面-->
+    <string name="two_code_title">二维码/添加设备</string>
+    <string name="two_code_right">相册</string>
+    <string name="two_code_hint">将二维码放在框内,即可扫描</string>
+    <!--发现设备界面-->
+    <string name="discover_device_title">发现设备</string>
+    <string name="discover_device_back_cancel">取消</string>
+    <string name="discover_device_hint1">确认设备已接入电源</string>
+    <string name="discover_device_hint2">当黄灯开始慢闪，点击下一步</string>
+    <string name="discover_device_connect">连接</string>
+    <!--选择网络界面-->
+    <string name="select_net_title">选择网络</string>
+    <string name="select_net_hint1">选择WLAN</string>
+    <string name="select_net_hint2">请选择一个可用的Wlan,让设备连入网络</string>
+    <string name="select_net_wifi">WIFI</string>
+    <string name="select_net_wifi_hint">输入可用的WIFI名</string>
+    <string name="select_net_pass_hint">输入可用WIFI密码</string>
+    <string name="select_net_connecting">连接中</string>
+    <string name="select_net_connect_fail">连接失败</string>
+    <string name="select_net_connect_hint">正在尝试与云端连接</string>
+    <string name="select_net_connect_fail_hint">你可以尝试重试连接</string>
+    <string name="select_net_connect_cancel">取消</string>
+    <string name="select_net_next_fail">请正确填写WIFI信息</string>
+    <string name="select_net_retry">重试</string>
+    <!--连接设备界面-->
+    <string name="connect_device_title">连接设备</string>
+    <string name="connect_device_hint1">与设备连接</string>
+    <string name="connect_device_hint1_success">连接成功</string>
+    <string name="connect_device_hint2">正在努力连接设备</string>
+    <string name="connect_device_find_device">发现设备</string>
+    <string name="connect_device_bind_device">设备注册成功</string>
+    <!--控制界面-->
+    <string name="control_interface_title">空气净化器</string>
+    <string name="control_interface_pm2_5">PM2.5</string>
+    <string name="control_interface_filter">滤芯还剩</string>
+    <string name="control_interface_air">TVOC(指数)</string>
+    <string name="control_interface_air_value">0</string>
+    <string name="control_interface_oxymothylene">甲醛(mg/m3)</string>
+    <string name="control_interface_pattern">模式</string>
+    <string name="control_interface_sterilize">杀菌</string>
+    <string name="control_interface_light">照明</string>
+    <string name="control_interface_atomize">雾化</string>
+    <string name="control_interface_anion">负离子</string>
+    <string name="control_interface_air_speed">风速</string>
+    <string name="control_interface_timer_close">定时\t关</string>
+    <string name="control_interface_timer_open">定时\t开</string>
+    <string name="control_interface_rename">设备重命名</string>
+    <string name="control_interface_filter_screen">滤网复位</string>
+    <string name="control_interface_null">输入框不能为空</string>
+    <string name="control_interface_rename_success">重命名设备成功</string>
+    <string name="control_interface_rename_fail">重命名设备失败</string>
+    <string name="control_interface_delete_sure">确定要删除设备？</string>
+    <string name="control_interface_delete_fail">删除设备失败</string>
+    <string name="control_interface_delete_success">删除设备成功</string>
+    <string name="control_interface_send_command_success">发送指令成功</string>
+    <string name="control_interface_send_command_fail">发送指令失败</string>
+    <string name="control_interface_filter_success">滤网复位成功</string>
+    <string name="control_interface_filter_reset">滤网已经复位</string>
+    <string name="control_interface_filter_fail">滤网复位失败</string>
+    <!--侧滑菜单界面-->
+    <string name="left_menu_user_name">Luluaway</string>
+    <string name="left_menu_user_phone">13146888090</string>
+    <string name="left_menu_home">首页</string>
+    <string name="left_menu_reader">说明</string>
+    <string name="left_menu_remind">滤网提醒</string>
+    <string name="left_menu_about">关于</string>
+    <string name="left_menu_share">分享设备</string>
+    <string name="left_menu_quit">退出登录</string>
+    <string name="left_menu_quit_hint">确定要退出登录吗？</string>
+    <!--进度提示-->
+    <string name="progress_login_hint">正在登录……</string>
+    <string name="progress_register_hint">正在注册……</string>
+    <string name="progress_quit_hint">正在退出登录……</string>
+    <string name="progress_reset_password">正在重置密码……</string>
+    <string name="progress_delete_hint">正在删除该设备……</string>
+    <string name="progress_change_hint">正在初始化……</string>
+    <string name="progress_adding_device">正在添加分享……</string>
+    <string name="progress_removing_share">正在移除分享……</string>
+    <string name="progress_loading_share">正在加载……</string>
+    <!--通知-->
+    <string name="notify_title">滤网剩余提醒</string>
+    <string name="notify_content">滤网已经少于20%，请注意更换！</string>
+    <!--关于界面和说明界面-->
+    <string name="about_title">关于</string>
+    <string name="explain_title">说明</string>
+    <!--添加分享界面-->
+    <string name="add_share_title">添加分享</string>
+    <string name="add_share_name">昵称</string>
+    <string name="add_share_success">分享设备成功</string>
+    <string name="add_share_fail">分享设备失败</string>
+    <string name="add_share_sure">确定</string>
+    <string name="my_share_no_limit">你没有权限操作此功能</string>
+    <string name="add_share_no_finish">分享信息填写不完整</string>
+    <string name="my_share_title">分享设备</string>
+    <string name="my_share_title2">我的分享</string>
+    <string name="my_share_remove_share">确定要移除分享嘛？</string>
+    <string name="my_share_remove_share_success">移除分享成功</string>
+    <string name="my_share_remove_share_fail">移除分享失败</string>
+    <string name="my_share_no_hint">还没有任何分享哦</string>
+    <string name="my_share_other">还没接收到任何分享哦</string>
+    <!--定时文本-->
+    <string name="timer_0h">定时 关</string>
+    <string name="timer_1h">1小时</string>
+    <string name="timer_2h">2小时</string>
+    <string name="timer_4h">4小时</string>
+    <string name="timer_8h">8小时</string>
+    <!--空气质量等级-->
+    <string name="quality_excellent">优</string>
+    <string name="quality_fine">良</string>
+    <string name="quality_general">中</string>
+    <string name="quality_bad">差</string>
+</resources>

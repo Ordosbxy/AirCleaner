@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saiyi.aircleaner">
+
+    <!--上网权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- sdcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--蒲公英集成所需权限-->
+    <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 获取logcat日志 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!--&lt;!&ndash;照相机权限&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <!--<uses-feature android:name="android.hardware.camera" />-->
+    <!--<uses-feature android:name="android.hardware.camera.autofocus" />-->
+    <!--<uses-permission android:name="android.permission.FLASHLIGHT"/>-->
+
+
+
+    <application
+        android:name=".CoreApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <!-- 蒲公英崩溃appId 正式版的时候需要去除 -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="2bc6b051bbfb7b7ef5364935e1e325a2" >
+        </meta-data>
+
+        <!--涂鸦智能appkey和secret-->
+        <meta-data
+            android:name="TUYA_SMART_APPKEY"
+            android:value="fj58pgmmyxke7qhjdqq8"/>
+        <meta-data
+            android:name="TUYA_SMART_SECRET"
+            android:value="4tfgmd8mj4vcuetqmfp8ge7dgsag7m8d"/>
+
+        <!--本地界面声明-->
+        <activity
+            android:name=".activity.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登录界面-->
+        <activity android:name=".activity.LoginActivity"/>
+        <!--我的设备界面-->
+        <activity
+            android:name=".activity.DeviceActivity"/>
+        <!--注册页面-->
+        <activity android:name=".activity.RegisterActivity"/>
+        <!--找回密码界面-->
+        <activity android:name=".activity.FindPassActivity"/>
+        <!--二维码扫描界面-->
+        <activity android:name=".activity.TwoCodeActivity"/>
+        <!--发现设备界面-->
+        <activity android:name=".activity.DiscoverDeviceActivity"/>
+        <!--选择网络界面-->
+        <activity android:name=".activity.SelectNetworkActivity"/>
+        <!--控制界面-->
+        <activity
+            android:name=".activity.ControlInterfaceActivity" />
+        <!--连接设备-->
+        <activity android:name=".activity.ConnectDeviceActivity"/>
+        <!--连接设备失败界面-->
+        <activity android:name=".activity.ConnectDeviceFailActivity"/>
+        <!--关于界面-->
+        <activity android:name=".activity.AboutActivity"/>
+        <!--说明界面-->
+        <activity android:name=".activity.ExplainActivity"/>
+        <!--添加分享界面-->
+        <activity android:name=".activity.AddShareActivity"/>
+        <!--我的分享界面-->
+        <activity android:name=".activity.ShareActivity"/>
+        <!--我的分享界面无接收到的分享-->
+        <activity android:name=".activity.MyShareActivity"/>
+        <!--涂鸦智能sdk所有服务注册类-->
+        <service android:name="org.eclipse.paho.android.service.MqttService"/>
+        <receiver android:name="com.tuya.smart.android.base.broadcast.NetworkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.tuya.smart.android.hardware.service.GwBroadcastMonitorService"
+            android:exported="true"
+            android:label="UDPService"
+            android:process=":monitor">
+            <intent-filter>
+                <action android:name="tuya.intent.action.udp"/>
+                <category android:name="tuya"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.tuya.smart.android.hardware.service.GwTransferService"
+            android:exported="true"
+            android:label="TCPService"
+            android:process=":transfer">
+            <intent-filter>
+                <action android:name="tuya.intent.action.tcp"/>
+                <category android:name="tuya"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

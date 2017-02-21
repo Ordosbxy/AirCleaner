@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <CheckBox
+        android:id="@+id/chb_device_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:checked="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/control_interface_light"
+        android:background="@android:color/transparent"
+        android:textColor="@drawable/selector_device_text_color"
+        android:drawableTop="@drawable/selector_device_light"/>
+    <CheckBox
+        android:id="@+id/chb_atomize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:checked="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/control_interface_atomize"
+        android:background="@android:color/transparent"
+        android:textColor="@drawable/selector_device_text_color"
+        android:drawableTop="@drawable/selector_device_atomize"/>
+</LinearLayout>

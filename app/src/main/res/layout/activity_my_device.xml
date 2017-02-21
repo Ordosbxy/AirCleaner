@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_no_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/ic_face"
+        android:paddingBottom="100dp"
+        android:drawablePadding="30dp"
+        android:text="@string/device_no_hint"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/ll_have_device"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/login_bg_color1">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/login_bg_color2"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-1.5dp"
+            android:background="@color/login_bg_color2"/>
+    </LinearLayout>
+</LinearLayout>
